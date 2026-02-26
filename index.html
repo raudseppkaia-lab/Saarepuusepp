@@ -151,7 +151,43 @@ footer {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Saare Puusepp OÜ | Puidutööd Saaremaal</title>
 <meta name="description" content="Saare Puusepp OÜ valmistab eritellimusel puidust uksi, aknaid, treppe ja terrasse Saaremaal.">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css"> .hero {
+    height: 90vh;
+    background: url("images/terrassid ja rodupiirded/aiamaja-terrass-puidust-saaremaa.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.65);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 54px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.btn {
+    background: #3b4a3f;
+    padding: 14px 35px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6c8b6d;
+}
 </head>
 <body>
 
@@ -170,10 +206,12 @@ footer {
 </header>
 
 <section class="hero">
-<div>
-<h1>Kvaliteetsed puidutööd Saaremaal</h1>
-<p>Uksed, aknad, trepid, terrassid ja eritellimuslahendused</p>
-<a href="kontakt.html" class="btn">Küsi pakkumist</a>
+<div class="hero-overlay">
+  <div class="hero-content">
+    <h1>Saare Puusepp OÜ</h1>
+    <p>Kvaliteetsed puidust uksed, trepid, terrassid ja eritellimuslahendused Saaremaal</p>
+    <a href="#kontakt" class="btn">Küsi pakkumist</a>
+  </div>
 </div>
 </section>
 
