@@ -1,46 +1,333 @@
+/index.html
+/teenused.html
+/galerii.html
+/kontakt.html
+/style.css
+/images/  (sinu pildid siia)
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #1f1f1f;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header {
+    background: #111;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a:hover {
+    color: #6c8b6d;
+}
+
+.hero {
+    height: 85vh;
+    background: url("images/hero.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.btn {
+    background: #3b4a3f;
+    padding: 12px 30px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6c8b6d;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.grid {
+    display: grid;
+    gap: 30px;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    background: #2a2a2a;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #111;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
 <!DOCTYPE html>
 <html lang="et">
 <head>
-  <meta charset="UTF-8">
-  <title>Saare Puusepp</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      text-align: center;
-    }
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 40px 20px;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      background-color: #27ae60;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saare Puusepp OÜ | Puidutööd Saaremaal</title>
+<meta name="description" content="Saare Puusepp OÜ valmistab eritellimusel puidust uksi, aknaid, treppe ja terrasse Saaremaal.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Saare Puusepp</h1>
-    <p>Kvaliteetne puidutöö ja eritellimusmööbel</p>
-  </header>
+<header>
+<div class="container">
+<nav>
+<h2>Saare Puusepp OÜ</h2>
+<ul>
+<li><a href="index.html">Avaleht</a></li>
+<li><a href="teenused.html">Teenused</a></li>
+<li><a href="galerii.html">Galerii</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</nav>
+</div>
+</header>
 
-  <section>
-    <h2>Teenused</h2>
-    <p>Valmistan mööblit, terrasse ja muid puidulahendusi.</p>
-    <a href="#" class="btn">Võta ühendust</a>
-  </section>
+<section class="hero">
+<div>
+<h1>Kvaliteetsed puidutööd Saaremaal</h1>
+<p>Uksed, aknad, trepid, terrassid ja eritellimuslahendused</p>
+<a href="kontakt.html" class="btn">Küsi pakkumist</a>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Meie teenused</h2>
+<div class="grid grid-3">
+<div class="card">
+<h3>Puidust uksed</h3>
+<p>Eritellimusel välis- ja siseuksed vastavalt mõõdule ja viimistlusele.</p>
+</div>
+<div class="card">
+<h3>Puitaknad</h3>
+<p>Vastupidavad ja kvaliteetsed aknad uusehitistele ja renoveerimiseks.</p>
+</div>
+<div class="card">
+<h3>Trepid ja terrassid</h3>
+<p>Turvalised ja vastupidavad lahendused sise- ja välistingimustesse.</p>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Saare Puusepp OÜ</p>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<title>Teenused | Saare Puusepp OÜ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<h2>Saare Puusepp OÜ</h2>
+<ul>
+<li><a href="index.html">Avaleht</a></li>
+<li><a href="teenused.html">Teenused</a></li>
+<li><a href="galerii.html">Galerii</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section>
+<div class="container">
+<h2>Teenused</h2>
+
+<div class="card">
+<h3>Puidust uksed</h3>
+<p>Valmistame eritellimusel välis- ja siseuksi. Võimalik valida klaaslahendused, viimistlus ja stiil.</p>
+</div>
+
+<div class="card">
+<h3>Puitaknad</h3>
+<p>Kvaliteetsed puitaknad mõõdu järgi, sobivad nii talumajadele kui uusehitistele.</p>
+</div>
+
+<div class="card">
+<h3>Trepid</h3>
+<p>Sirged ja pöördetrepid koos piirete ja käsipuudega.</p>
+</div>
+
+<div class="card">
+<h3>Terrassid</h3>
+<p>Terrasside ehitus ja paigaldus vastupidavatest materjalidest.</p>
+</div>
+
+<div class="card">
+<h3>Eritellimus</h3>
+<p>Talusildid, väravad, piirded ja muud erilahendused.</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Saare Puusepp OÜ</p>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<title>Galerii | Saare Puusepp OÜ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<h2>Saare Puusepp OÜ</h2>
+<ul>
+<li><a href="index.html">Avaleht</a></li>
+<li><a href="teenused.html">Teenused</a></li>
+<li><a href="galerii.html">Galerii</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section>
+<div class="container">
+<h2>Tehtud tööd</h2>
+<div class="grid grid-3 gallery">
+<img src="images/uks.jpg" alt="Puidust uks">
+<img src="images/aken.jpg" alt="Puitaken">
+<img src="images/trepp.jpg" alt="Puidust trepp">
+<img src="images/terrass.jpg" alt="Terrass">
+<img src="images/varav.jpg" alt="Puidust värav">
+<img src="images/silt.jpg" alt="Talusilt">
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Saare Puusepp OÜ</p>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<title>Kontakt | Saare Puusepp OÜ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<h2>Saare Puusepp OÜ</h2>
+<ul>
+<li><a href="index.html">Avaleht</a></li>
+<li><a href="teenused.html">Teenused</a></li>
+<li><a href="galerii.html">Galerii</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section>
+<div class="container">
+<h2>Kontakt</h2>
+
+<p><strong>Saare Puusepp OÜ</strong></p>
+<p>Saaremaa</p>
+<p>Telefon: +372 XXXXXXXX</p>
+<p>Email: info@saarepuusepp.ee</p>
+
+<br>
+
+<a href="mailto:info@saarepuusepp.ee" class="btn">Saada kiri</a>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Saare Puusepp OÜ</p>
+</footer>
 
 </body>
 </html>
