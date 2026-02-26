@@ -1,416 +1,97 @@
-/index.html
-/teenused.html
-/galerii.html
-/kontakt.html
-/style.css
-/* Premium Gallery */
-
-.gallery {
-    margin-top: 50px;
-}
-
-.gallery img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-}
-
-/* Section spacing premium feel */
-section {
-    padding: 120px 0;
-}
-/images/  (sinu pildid siia)
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-<section>
-<div class="container">
-
-<h2>Mööbel & Kingitused</h2>
-
-<div class="grid grid-3 gallery">
-
-<img src="images/moobel/tammepink-70-juubel.jpg" 
-alt="Graveeritud tammepuidust pink 70. juubeliks">
-
-</div>
-
-<h3>Graveeritud puidust pink juubeliks</h3>
-
-<p>
-Kas otsid ainulaadset ja isiklikku kingitust juubeliks? 
-Saare Puusepp OÜ valmistab käsitööna kvaliteetseid puidust pinke, 
-millele saame lisada personaalse graveeringu – nime, numbri või pühenduse.
-</p>
-
-</div>
-</section>
-body {
-    background: #1f1f1f;
-    color: #f2f2f2;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-header {
-    background: #111;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-nav a:hover {
-    color: #6c8b6d;
-}
-
-.hero {
-    height: 85vh;
-    background: url("images/hero.jpg") center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 48px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin: 20px 0;
-}
-
-.btn {
-    background: #3b4a3f;
-    padding: 12px 30px;
-    display: inline-block;
-    margin-top: 10px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #6c8b6d;
-}
-
-section {
-    padding: 80px 0;
-}
-
-h2 {
-    margin-bottom: 40px;
-    text-align: center;
-    font-size: 32px;
-}
-
-.grid {
-    display: grid;
-    gap: 30px;
-}
-
-.grid-3 {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.card {
-    background: #2a2a2a;
-    padding: 25px;
-    border-radius: 6px;
-}
-
-.gallery img {
-    width: 100%;
-    border-radius: 6px;
-    transition: 0.3s;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-footer {
-    background: #111;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
 <!DOCTYPE html>
 <html lang="et">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saare Puusepp OÜ | Puidutööd Saaremaal</title>
-<meta name="description" content="Saare Puusepp OÜ valmistab eritellimusel puidust uksi, aknaid, treppe ja terrasse Saaremaal.">
-<link rel="stylesheet" href="style.css"> .hero {
-    height: 90vh;
-    background: url("images/terrassid ja rodupiirded/aiamaja-terrass-puidust-saaremaa.jpg") center/cover no-repeat;
-    position: relative;
-}
-
-.hero-overlay {
-    background: rgba(0, 0, 0, 0.65);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 54px;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-.hero-content p {
-    font-size: 20px;
-    max-width: 700px;
-    margin: 0 auto 30px;
-}
-
-.btn {
-    background: #3b4a3f;
-    padding: 14px 35px;
-    display: inline-block;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #6c8b6d;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saare Puusepp OÜ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-<div class="container">
-<nav>
-<h2>Saare Puusepp OÜ</h2>
-<ul>
-<li><a href="index.html">Avaleht</a></li>
-<li><a href="teenused.html">Teenused</a></li>
-<li><a href="galerii.html">Galerii</a></li>
-<li><a href="kontakt.html">Kontakt</a></li>
-</ul>
-</nav>
-</div>
+    <div class="container nav">
+        <h1>Saare Puusepp OÜ</h1>
+        <ul>
+            <li><a href="#teenused">Teenused</a></li>
+            <li><a href="#galerii">Galerii</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </div>
 </header>
 
 <section class="hero">
-<div class="hero-overlay">
-  <div class="hero-content">
-    <h1>Saare Puusepp OÜ</h1>
-    <p>Kvaliteetsed puidust uksed, trepid, terrassid ja eritellimuslahendused Saaremaal</p>
-    <a href="#kontakt" class="btn">Küsi pakkumist</a>
-  </div>
-</div>
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h2>Kvaliteetsed puidutööd Saaremaal</h2>
+            <p>Uksed, terrassid, eritellimusmööbel ja personaalsed kingitused.</p>
+            <a href="#kontakt" class="btn">Küsi pakkumist</a>
+        </div>
+    </div>
 </section>
 
-<section>
-<div class="container">
-<h2>Meie teenused</h2>
-<div class="grid grid-3">
-<div class="card">
-<h3>Puidust uksed</h3>
-<p>Eritellimusel välis- ja siseuksed vastavalt mõõdule ja viimistlusele.</p>
-</div>
-<div class="card">
-<h3>Puitaknad</h3>
-<p>Vastupidavad ja kvaliteetsed aknad uusehitistele ja renoveerimiseks.</p>
-</div>
-<div class="card">
-<h3>Trepid ja terrassid</h3>
-<p>Turvalised ja vastupidavad lahendused sise- ja välistingimustesse.</p>
-</div>
-</div>
-</div>
+<section id="teenused" class="container">
+    <h2>Meie teenused</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Puidust uksed</h3>
+            <p>Valmistame kvaliteetseid välis- ja siseuksi vastavalt tellija soovile.</p>
+        </div>
+
+        <div class="card">
+            <h3>Terrassid</h3>
+            <p>Ilusad ja vastupidavad terrassilahendused.</p>
+        </div>
+
+        <div class="card">
+            <h3>Mööbel & Kingitused</h3>
+            <p>Personaalse graveeringuga pingid ja eritellimusmööbel.</p>
+        </div>
+    </div>
 </section>
 
-<footer>
-<p>© 2026 Saare Puusepp OÜ</p>
-</footer>
+<section id="galerii" class="container gallery">
+    <h2>Galerii</h2>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="et">
-<head>
-<meta charset="UTF-8">
-<title>Teenused | Saare Puusepp OÜ</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <div class="grid">
+        <img src="images/tammepuidust-pink-juubeliks.jpg" alt="Graveeritud tammepuidust pink">
+        <img src="images/puidust-terrass.jpg" alt="Puidust terrass">
+        <img src="images/puidust-uksed.jpg" alt="Puidust uksed">
+    </div>
+</section>
 
-<header>
-<div class="container">
-<nav>
-<h2>Saare Puusepp OÜ</h2>
-<ul>
-<li><a href="index.html">Avaleht</a></li>
-<li><a href="teenused.html">Teenused</a></li>
-<li><a href="galerii.html">Galerii</a></li>
-<li><a href="kontakt.html">Kontakt</a></li>
-</ul>
-</nav>
-</div>
-</header>
-
-<section>
-<div class="container">
-<h2>Teenused</h2>
-
-<div class="card">
-<h3>Puidust uksed</h3>
-<p>Valmistame eritellimusel välis- ja siseuksi. Võimalik valida klaaslahendused, viimistlus ja stiil.</p>
-</div>
-
-<div class="card">
-<h3>Puitaknad</h3>
-<p>Kvaliteetsed puitaknad mõõdu järgi, sobivad nii talumajadele kui uusehitistele.</p>
-</div>
-
-<div class="card">
-<h3>Trepid</h3>
-<p>Sirged ja pöördetrepid koos piirete ja käsipuudega.</p>
-</div>
-
-<div class="card">
-<h3>Terrassid</h3>
-<p>Terrasside ehitus ja paigaldus vastupidavatest materjalidest.</p>
-</div>
-
-<div class="card">
-<h3>Eritellimus</h3>
-<p>Talusildid, väravad, piirded ja muud erilahendused.</p>
-</div>
-
-</div>
+<section id="kontakt" class="container kontakt">
+    <h2>Kontakt</h2>
+    <p>Email: info@saarepuusepp.ee</p>
+    <p>Telefon: +372 XXXX XXXX</p>
 </section>
 
 <footer>
-<p>© 2026 Saare Puusepp OÜ</p>
+    <p>© 2025 Saare Puusepp OÜ</p>
 </footer>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="et">
-<head>
-<meta charset="UTF-8">
-<title>Galerii | Saare Puusepp OÜ</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-<div class="container">
-<nav>
-<h2>Saare Puusepp OÜ</h2>
-<ul>
-<li><a href="index.html">Avaleht</a></li>
-<li><a href="teenused.html">Teenused</a></li>
-<li><a href="galerii.html">Galerii</a></li>
-<li><a href="kontakt.html">Kontakt</a></li>
-</ul>
-</nav>
+<!-- LIGHTBOX -->
+<div id="lightbox">
+    <img id="lightbox-img">
 </div>
-</header>
 
-<section>
-<div class="container">
-<h2>Tehtud tööd</h2>
-<div class="grid grid-3 gallery">
-<img src="images/uks.jpg" alt="Puidust uks">
-<img src="images/aken.jpg" alt="Puitaken">
-<img src="images/trepp.jpg" alt="Puidust trepp">
-<img src="images/terrass.jpg" alt="Terrass">
-<img src="images/varav.jpg" alt="Puidust värav">
-<img src="images/silt.jpg" alt="Talusilt">
-</div>
-</div>
-</section>
+<script>
+const images = document.querySelectorAll(".gallery img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
 
-<footer>
-<p>© 2026 Saare Puusepp OÜ</p>
-</footer>
+images.forEach(img => {
+  img.addEventListener("click", () => {
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+  });
+});
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="et">
-<head>
-<meta charset="UTF-8">
-<title>Kontakt | Saare Puusepp OÜ</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-<div class="container">
-<nav>
-<h2>Saare Puusepp OÜ</h2>
-<ul>
-<li><a href="index.html">Avaleht</a></li>
-<li><a href="teenused.html">Teenused</a></li>
-<li><a href="galerii.html">Galerii</a></li>
-<li><a href="kontakt.html">Kontakt</a></li>
-</ul>
-</nav>
-</div>
-</header>
-
-<section>
-<div class="container">
-<h2>Kontakt</h2>
-
-<p><strong>Saare Puusepp OÜ</strong></p>
-<p>Saaremaa</p>
-<p>Telefon: +372 XXXXXXXX</p>
-<p>Email: info@saarepuusepp.ee</p>
-
-<br>
-
-<a href="mailto:info@saarepuusepp.ee" class="btn">Saada kiri</a>
-
-</div>
-</section>
-
-<footer>
-<p>© 2026 Saare Puusepp OÜ</p>
-</footer>
+lightbox.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+</script>
 
 </body>
 </html>
