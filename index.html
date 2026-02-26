@@ -3,93 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saare Puusepp OÜ</title>
+    <title>Saare Puusepp OÜ | Puidust uksed, terrassid ja eritellimusmööbel</title>
+    <meta name="description" content="Saare Puusepp OÜ valmistab kvaliteetseid puidust uksi, aknaid, terrasse ja eritellimusmööblit Saaremaal. Personaalsed talusildid ja graveeritud kingitused.">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <div class="container nav">
-        <h1>Saare Puusepp OÜ</h1>
-        <ul>
-            <li><a href="#teenused">Teenused</a></li>
-            <li><a href="#galerii">Galerii</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
+    <div class="nav-container">
+        <img src="images/logo.png" alt="Saare Puusepp logo" class="logo">
+
+        <div class="menu">
+            <button class="menu-btn">☰</button>
+            <div class="dropdown">
+                <a href="#teenused">Teenused</a>
+                <a href="#galerii">Galerii</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+        </div>
     </div>
 </header>
 
 <section class="hero">
     <div class="hero-overlay">
         <div class="hero-content">
-            <h2>Kvaliteetsed puidutööd Saaremaal</h2>
-            <p>Uksed, terrassid, eritellimusmööbel ja personaalsed kingitused.</p>
+            <h1>Tere tulemast Saare Puuseppa</h1>
+            <p>
+                Valmistame eritellimusel puidust uksi ja aknaid, kvaliteetseid terrasse,
+                vastupidavat mööblit ning personaalseid talusilte.
+                Kui otsid käsitööna valminud lahendust, mis kestab põlvest põlve,
+                oled õiges kohas.
+            </p>
             <a href="#kontakt" class="btn">Küsi pakkumist</a>
         </div>
     </div>
 </section>
 
-<section id="teenused" class="container">
+<section id="teenused" class="content">
     <h2>Meie teenused</h2>
-
     <div class="grid">
         <div class="card">
-            <h3>Puidust uksed</h3>
-            <p>Valmistame kvaliteetseid välis- ja siseuksi vastavalt tellija soovile.</p>
+            <h3>Puidust uksed ja aknad</h3>
+            <p>Valmistame eri mõõdus välis- ja siseuksi ning aknaid vastavalt tellija soovile.</p>
         </div>
 
         <div class="card">
-            <h3>Terrassid</h3>
-            <p>Ilusad ja vastupidavad terrassilahendused.</p>
+            <h3>Terrassid ja välistingimuste lahendused</h3>
+            <p>Ilusad ja vastupidavad terrassid, mis sobituvad sinu kodu ja aiaga.</p>
         </div>
 
         <div class="card">
-            <h3>Mööbel & Kingitused</h3>
-            <p>Personaalse graveeringuga pingid ja eritellimusmööbel.</p>
+            <h3>Eritellimusmööbel ja kingitused</h3>
+            <p>Graveeritud pingid, talusildid ja unikaalsed puidust kingitused.</p>
         </div>
     </div>
 </section>
 
-<section id="galerii" class="container gallery">
-    <h2>Galerii</h2>
-
-    <div class="grid">
-        <img src="images/tammepuidust-pink-juubeliks.jpg" alt="Graveeritud tammepuidust pink">
-        <img src="images/puidust-terrass.jpg" alt="Puidust terrass">
-        <img src="images/puidust-uksed.jpg" alt="Puidust uksed">
-    </div>
-</section>
-
-<section id="kontakt" class="container kontakt">
+<section id="kontakt" class="kontakt">
     <h2>Kontakt</h2>
     <p>Email: info@saarepuusepp.ee</p>
     <p>Telefon: +372 XXXX XXXX</p>
 </section>
 
 <footer>
-    <p>© 2025 Saare Puusepp OÜ</p>
+    © 2025 Saare Puusepp OÜ
 </footer>
 
-<!-- LIGHTBOX -->
-<div id="lightbox">
-    <img id="lightbox-img">
-</div>
-
 <script>
-const images = document.querySelectorAll(".gallery img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-
-images.forEach(img => {
-  img.addEventListener("click", () => {
-    lightbox.style.display = "flex";
-    lightboxImg.src = img.src;
-  });
-});
-
-lightbox.addEventListener("click", () => {
-  lightbox.style.display = "none";
+document.querySelector(".menu-btn").addEventListener("click", function() {
+    document.querySelector(".dropdown").classList.toggle("show");
 });
 </script>
 
