@@ -1,80 +1,93 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saare Puusepp OÜ | Puidust uksed, terrassid ja eritellimusmööbel</title>
-    <meta name="description" content="Saare Puusepp OÜ valmistab kvaliteetseid puidust uksi, aknaid, terrasse ja eritellimusmööblit Saaremaal. Personaalsed talusildid ja graveeritud kingitused.">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saare Puusepp OÜ | Puidust uksed, terrassid ja eritellimusmööbel</title>
+
+<meta name="description" content="Saare Puusepp OÜ valmistab eritellimusel puidust uksi, aknaid, terrasse ja mööblit Saaremaal. Kvaliteetne käsitöö ja vastupidavad lahendused.">
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <div class="nav-container">
-        <img src="images/logo.png" alt="Saare Puusepp logo" class="logo">
-
-        <div class="menu">
-            <button class="menu-btn">☰</button>
-            <div class="dropdown">
-                <a href="#teenused">Teenused</a>
-                <a href="#galerii">Galerii</a>
-                <a href="#kontakt">Kontakt</a>
-            </div>
-        </div>
-    </div>
+  <div class="nav">
+    <a href="#home" class="logo">Saare Puusepp OÜ</a>
+    <nav>
+      <a href="#teenused">Teenused</a>
+      <a href="#galerii">Galerii</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
 </header>
 
-<section class="hero">
-    <div class="hero-overlay">
-        <div class="hero-content">
-            <h1>Tere tulemast Saare Puuseppa</h1>
-            <p>
-                Valmistame eritellimusel puidust uksi ja aknaid, kvaliteetseid terrasse,
-                vastupidavat mööblit ning personaalseid talusilte.
-                Kui otsid käsitööna valminud lahendust, mis kestab põlvest põlve,
-                oled õiges kohas.
-            </p>
-            <a href="#kontakt" class="btn">Küsi pakkumist</a>
-        </div>
-    </div>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Kvaliteetsed puidutööd Saaremaal</h1>
+    <p>
+      Tere tulemast! Meilt saad tellida eri mõõdus puidust uksi ja aknaid,
+      eritellimusmööblit, talusilte ning vastupidavaid terrasse.
+      Iga töö valmib käsitööna ja kestma aastakümneteks.
+    </p>
+    <a href="#kontakt" class="btn">Küsi pakkumist</a>
+  </div>
 </section>
 
-<section id="teenused" class="content">
-    <h2>Meie teenused</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Puidust uksed ja aknad</h3>
-            <p>Valmistame eri mõõdus välis- ja siseuksi ning aknaid vastavalt tellija soovile.</p>
-        </div>
+<section id="teenused" class="section">
+  <h2>Meie teenused</h2>
 
-        <div class="card">
-            <h3>Terrassid ja välistingimuste lahendused</h3>
-            <p>Ilusad ja vastupidavad terrassid, mis sobituvad sinu kodu ja aiaga.</p>
-        </div>
+  <div class="cards">
 
-        <div class="card">
-            <h3>Eritellimusmööbel ja kingitused</h3>
-            <p>Graveeritud pingid, talusildid ja unikaalsed puidust kingitused.</p>
-        </div>
-    </div>
+    <a href="#galerii-uksed" class="card">
+      <h3>Puidust uksed ja aknad</h3>
+      <p>Valmistame vastupidavaid ja eritellimusel lahendusi.</p>
+    </a>
+
+    <a href="#galerii-terrassid" class="card">
+      <h3>Terrassid ja välistingimuste lahendused</h3>
+      <p>Ilusad ja vastupidavad terrassid igale kodule.</p>
+    </a>
+
+    <a href="#galerii-mobel" class="card">
+      <h3>Eritellimusmööbel ja kingitused</h3>
+      <p>Graveeritud pingid, talusildid ja unikaalsed lahendused.</p>
+    </a>
+
+  </div>
 </section>
 
-<section id="kontakt" class="kontakt">
-    <h2>Kontakt</h2>
-    <p>Email: saarepuusepp@gmail.com</p>
-    <p>Telefon: +372 5188151 </p>
+<section id="galerii" class="section">
+  <h2>Galerii</h2>
+
+  <h3 id="galerii-uksed">Uksed ja aknad</h3>
+  <div class="gallery">
+    <img src="images/puidust-uksed.jpg">
+    <img src="images/aknad.jpg">
+  </div>
+
+  <h3 id="galerii-terrassid">Terrassid</h3>
+  <div class="gallery">
+    <img src="images/terrass-aiamaja.jpg">
+  </div>
+
+  <h3 id="galerii-mobel">Mööbel ja kingitused</h3>
+  <div class="gallery">
+    <img src="images/tammepink.jpg">
+  </div>
+
+</section>
+
+<section id="kontakt" class="section kontakt">
+  <h2>Kontakt</h2>
+  <p>Email: info@saarepuusepp.ee</p>
+  <p>Telefon: +372 XXXX XXXX</p>
 </section>
 
 <footer>
-    © 2025 Saare Puusepp OÜ
+  © 2025 Saare Puusepp OÜ
 </footer>
-
-<script>
-document.querySelector(".menu-btn").addEventListener("click", function() {
-    document.querySelector(".dropdown").classList.toggle("show");
-});
-</script>
 
 </body>
 </html>
