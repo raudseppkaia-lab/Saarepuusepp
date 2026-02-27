@@ -2,22 +2,22 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: "Segoe UI", sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  background:#000; /* mustad ääred */
-  color:#222;
+  background:black;
 }
 
-/* NAV */
+/* HEADER */
 
 header {
-  background:#000;
+  background:black;
   padding:20px 0;
 }
 
-.nav {
+.container {
+  width:90%;
   max-width:1200px;
   margin:auto;
   display:flex;
@@ -26,31 +26,26 @@ header {
 }
 
 .logo {
-  color:#fff;
+  color:white;
+  text-decoration:none;
   font-size:24px;
   font-weight:bold;
-  text-decoration:none;
 }
 
 nav a {
-  color:#fff;
-  margin-left:25px;
+  color:white;
+  margin-left:20px;
   text-decoration:none;
-  transition:0.3s;
-}
-
-nav a:hover {
-  color:#c49b3c;
 }
 
 /* HERO */
 
 .hero {
-  background: url("images/terrass-aiamaja.jpg") center/cover no-repeat;
   height:90vh;
+  background:url("images/terrass-aiamaja.jpg") center/cover no-repeat;
   display:flex;
-  align-items:center;
   justify-content:center;
+  align-items:center;
   text-align:center;
   position:relative;
 }
@@ -59,91 +54,55 @@ nav a:hover {
   content:"";
   position:absolute;
   inset:0;
-  background:rgba(0,0,0,0.55);
+  background:rgba(0,0,0,0.6);
 }
 
-.hero-content {
+.hero-text {
   position:relative;
-  max-width:800px;
-  color:#fff;
+  color:white;
+  max-width:700px;
 }
 
-.hero h1 {
-  font-size:48px;
+.hero-text h1 {
+  font-size:42px;
   margin-bottom:20px;
 }
 
-.hero p {
-  font-size:20px;
-  line-height:1.6;
+.hero-text p {
   margin-bottom:30px;
 }
 
 .btn {
   background:#c49b3c;
-  color:#000;
-  padding:14px 35px;
+  color:black;
+  padding:12px 30px;
   text-decoration:none;
-  font-weight:bold;
-  border-radius:6px;
 }
 
-/* SECTIONS */
+/* CONTENT */
 
-.section {
-  background:#f4f6f2; /* hele rohekas keskosa */
-  padding:100px 20px;
-}
-
-.section h2 {
+.content {
+  background:#f2f5f1;
+  padding:80px 20px;
   text-align:center;
-  margin-bottom:50px;
-  font-size:32px;
 }
 
-/* CARDS */
-
-.cards {
-  max-width:1200px;
-  margin:auto;
-  display:grid;
-  gap:30px;
-}
-
-.card {
-  background:#fff;
-  padding:30px;
-  border-radius:12px;
-  text-decoration:none;
-  color:#222;
-  transition:0.3s;
-  border:1px solid #e3e3e3;
-}
-
-.card:hover {
-  transform:translateY(-6px);
-  box-shadow:0 8px 20px rgba(0,0,0,0.1);
-}
-
-/* GALLERY */
-
-.gallery {
-  max-width:1200px;
-  margin:30px auto 60px auto;
-  display:grid;
+.boxes {
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
   gap:20px;
 }
 
-.gallery img {
-  width:100%;
-  border-radius:8px;
+.box {
+  background:white;
+  padding:30px;
+  width:250px;
 }
 
-/* FOOTER */
-
 footer {
-  background:#000;
-  color:#fff;
+  background:black;
+  color:white;
   text-align:center;
-  padding:25px;
+  padding:20px;
 }
