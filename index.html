@@ -6,51 +6,47 @@
 <title>Saare Puusepp OÜ</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-  <div class="container">
-    <a href="index.html" class="logo">
-  <img src="images/logo.png" alt="Saare Puusepp OÜ">
-</a>
-<a href="index.html" class="logo-text">Saare Puusepp OÜ</a>
-    <nav>
-      <a href="#teenused">Teenused</a>
-      <a href="#galerii">Galerii</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
+  <div class="logo-area">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Saare Puusepp OÜ">
+    </a>
+    <a href="index.html">Saare Puusepp OÜ</a>
   </div>
+  <nav>
+    <a href="teenused.html">Teenused</a>
+    <a href="galerii.html">Galerii</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-text">
-    <h1>Kvaliteetsed puidutööd Saaremaal</h1>
+  <div class="hero-content">
+    <h1>Tere tulemast, oled õiges kohas</h1>
     <p>
-      Valmistame eri mõõdus puidust uksi ja aknaid, eritellimusmööblit,
-      talusilte ning vastupidavaid terrasse.
+    kui soovid erimöödus uksi, aknaid, kindlat treppi, mis viib sind teisele korrusele,
+    või on hoopis mingi muu soov, mida saame täita!
     </p>
-    <a href="#kontakt" class="btn">Küsi pakkumist</a>
+    <a href="#kontakt" class="btn">Võta meiega ühendust</a>
   </div>
 </section>
 
-<section id="teenused" class="content">
-  <h2>Meie teenused</h2>
-  <div class="boxes">
-    <div class="box">Puidust uksed ja aknad</div>
-    <div class="box">Terrassid ja välistingimused</div>
-    <div class="box">Eritellimusmööbel ja kingitused</div>
+<section id="kontakt" class="section">
+  <h2>Võta meiega ühendust</h2>
+  <div class="contact-form">
+    <form action="https://formsubmit.co/saarepuusepp@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Sinu nimi" required>
+      <input type="email" name="email" placeholder="Sinu email" required>
+      <textarea name="message" rows="5" placeholder="Kirjuta oma soov siia..." required></textarea>
+      <button type="submit">Saada kiri</button>
+    </form>
   </div>
+  <p style="text-align:center;margin-top:20px;">
+    📞 <a href="tel:+372 5188151" style="color:white;">+372 5188151</a>
+  </p>
 </section>
-
-<section id="kontakt" class="content">
-  <h2>Kontakt</h2>
-  <p>Email: info@saarepuusepp.ee</p>
-</section>
-
-<footer>
-  © 2025 Saare Puusepp OÜ
-</footer>
 
 </body>
 </html>
