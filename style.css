@@ -1,119 +1,185 @@
-/* RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-/* KOGU LEHT METSAROHELINE */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #1f3d2b;   /* metsaroheline */
-  color: white;
-  line-height: 1.6;
+  background:#1f3d2b;
+  color:white;
+  line-height:1.6;
 }
 
 /* HEADER */
 header {
-  padding: 20px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background:#173322;
 }
 
-/* LOGO */
-.logo img {
-  height: 80px;
+.logo-area {
+  display:flex;
+  align-items:center;
+  gap:12px;
 }
 
-.logo-text {
-  font-size: 22px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
+.logo-area img {
+  height:50px;
 }
 
-/* NAV */
+.logo-area a {
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+  font-size:20px;
+}
+
 nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 30px;
-  font-weight: 500;
-  transition: 0.3s;
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+  font-weight:500;
 }
 
 nav a:hover {
-  color: #d4af37; /* kuldne hover */
+  color:#d4af37;
 }
 
 /* HERO */
 .hero {
-  text-align: center;
-  padding: 120px 20px;
+  position:relative;
+  padding:140px 20px;
+  text-align:center;
+  background:url("images/terrassid-ja-rodopiirded/rodopiire.jpg") center/cover no-repeat;
+}
+
+.hero::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(31,61,43,0.75);
+}
+
+.hero-content {
+  position:relative;
+  z-index:2;
 }
 
 .hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size:42px;
+  margin-bottom:25px;
 }
 
 .hero p {
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-  font-size: 20px;
+  max-width:900px;
+  margin:0 auto 40px auto;
+  font-size:20px;
 }
 
-/* KULDNE NUPP */
+/* BUTTON */
 .btn {
-  background: #d4af37;
-  color: black;
-  padding: 16px 40px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: 0.3s;
-  display: inline-block;
+  background:#d4af37;
+  color:black;
+  padding:16px 45px;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:6px;
+  display:inline-block;
 }
 
 .btn:hover {
-  background: #b9972e;
+  background:#b9972e;
 }
 
-/* SISU BLOKID */
-.content {
-  padding: 80px 8%;
+/* SECTIONS */
+.section {
+  padding:80px 8%;
 }
 
-.content h2 {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 36px;
+.section h2 {
+  text-align:center;
+  margin-bottom:50px;
 }
 
-.boxes {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
+/* CARDS */
+.cards {
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  justify-content:center;
 }
 
-.box {
-  background: #254c36;
-  padding: 40px;
-  border-radius: 10px;
-  width: 300px;
-  text-align: center;
-  transition: 0.3s;
+.card {
+  background:#264e36;
+  padding:35px;
+  width:280px;
+  border-radius:10px;
+  text-align:center;
 }
 
-.box:hover {
-  background: #2e5e43;
+.card a {
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.card:hover {
+  background:#2f6042;
+}
+
+/* GALLERY */
+.gallery-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.gallery-grid img {
+  width:100%;
+  border-radius:8px;
+}
+
+/* CONTACT */
+.contact-form {
+  max-width:600px;
+  margin:0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:5px;
+}
+
+.contact-form button {
+  width:100%;
+  padding:14px;
+  background:#d4af37;
+  color:black;
+  border:none;
+  font-weight:bold;
+  border-radius:5px;
 }
 
 /* FOOTER */
 footer {
-  text-align: center;
-  padding: 30px;
-  background: #163021;
-  margin-top: 60px;
+  text-align:center;
+  padding:30px;
+  background:#13281c;
+  margin-top:60px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  nav{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
 }
