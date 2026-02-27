@@ -6,7 +6,7 @@
 }
 
 body {
-  background:black;
+  background:militargreen;
 }
 
 /* HEADER */
@@ -42,7 +42,7 @@ nav a {
 
 .hero {
   height:90vh;
-  background:url("images/terrass-aiamaja.jpg") center/cover no-repeat;
+  background:url("images/terrassid ja rodupiirded/aiamaja-terrass-puidust-saaremaa.jpg") center/cover no-repeat;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -54,7 +54,7 @@ nav a {
   content:"";
   position:absolute;
   inset:0;
-  background:rgba(0,0,0,0.6);
+  background: rgba(18, 45, 28, 0.55);
 }
 
 .hero-text {
