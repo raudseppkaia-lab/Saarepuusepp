@@ -75,16 +75,17 @@ nav a {
 }
 
 .btn {
-  background:#8a9a5b;   /* oliiviroheline */
-  color:white;
-  padding:14px 35px;
+  background:#c9a227;   /* soe kuld */
+  color:#000;
+  padding:16px 40px;
   text-decoration:none;
-  border-radius:8px;
+  border-radius:6px;
+  font-weight:600;
   transition:0.3s;
 }
 
 .btn:hover {
-  background:#6f7f47;
+  background:#b38f1f;
 }
 
 /* CONTENT */
