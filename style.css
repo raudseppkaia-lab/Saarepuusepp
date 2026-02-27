@@ -6,9 +6,12 @@
 }
 
 body {
-  background:militargreen;
+  font-family: 'Inter', sans-serif;
 }
 
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
 /* HEADER */
 
 header {
@@ -73,10 +76,16 @@ nav a {
 }
 
 .btn {
-  background:#c49b3c;
-  color:black;
-  padding:12px 30px;
+  background:#8a9a5b;   /* oliiviroheline */
+  color:white;
+  padding:14px 35px;
   text-decoration:none;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.btn:hover {
+  background:#6f7f47;
 }
 
 /* CONTENT */
