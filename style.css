@@ -1,185 +1,439 @@
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+diff --git a/style.css b/style.css
+index 216d9e8caa46c425b4e4780a368da88da86692a9..cf98f5268d53e153e745ae52600db1d7aa65085b 100644
+--- a/style.css
++++ b/style.css
+@@ -1,185 +1,323 @@
+ * {
+-  margin:0;
+-  padding:0;
+-  box-sizing:border-box;
++  margin: 0;
++  padding: 0;
++  box-sizing: border-box;
++}
++
++:root {
++  --military-green: #4b5320;
++  --military-green-dark: #353b17;
++  --military-green-soft: #6f7740;
++  --gold-accent: #d7b75d;
++  --text-light: #f3f5ec;
+ }
+ 
+ body {
+   font-family: Arial, Helvetica, sans-serif;
+-  background:#1f3d2b;
+-  color:white;
+-  line-height:1.6;
++  background: var(--military-green-dark);
++  color: var(--text-light);
++  line-height: 1.6;
+ }
+ 
+-/* HEADER */
+ header {
+-  display:flex;
+-  justify-content:space-between;
+-  align-items:center;
+-  padding:20px 8%;
+-  background:#173322;
++  display: flex;
++  justify-content: space-between;
++  align-items: center;
++  padding: 18px 8%;
++  background: #2a2f12;
++  position: sticky;
++  top: 0;
++  z-index: 20;
+ }
+ 
+ .logo-area {
+-  display:flex;
+-  align-items:center;
+-  gap:12px;
++  display: flex;
++  align-items: center;
++  gap: 12px;
+ }
+ 
+ .logo-area img {
+-  height:20px;
++  height: 74px;
++  width: auto;
+ }
+ 
+ .logo-area a {
+-  text-decoration:none;
+-  color:white;
+-  font-weight:bold;
+-  font-size:20px;
++  text-decoration: none;
++  color: var(--text-light);
++  font-weight: 700;
++  font-size: 1.45rem;
++}
++
++nav {
++  display: flex;
++  flex-wrap: wrap;
++  gap: 18px;
+ }
+ 
+ nav a {
+-  color:white;
+-  text-decoration:none;
+-  margin-left:25px;
+-  font-weight:500;
++  color: var(--text-light);
++  text-decoration: none;
++  font-weight: 600;
+ }
+ 
+ nav a:hover {
+-  color:#d4af37;
++  color: var(--gold-accent);
++}
++
++main {
++  min-height: 70vh;
+ }
+ 
+-/* HERO */
+ .hero {
+-  position:relative;
+-  padding:140px 20px;
+-  text-align:center;
+-  background:url("images/terrassid-ja-roypiirded/puidust-ajamaja-terss-saaremaa.jpg") center/cover no-repeat;
++  position: relative;
++  min-height: 68vh;
++  padding: 120px 20px;
++  text-align: center;
++  background-color: #2a2f12;
++  background-image: url("images/tisler.jpg");
++  background-position: center center;
++  background-size: cover;
++  background-repeat: no-repeat;
+ }
+ 
+ .hero::after {
+-  content:"";
+-  position:absolute;
+-  inset:0;
+-  background:rgba(31,61,43,0.75);
++  content: "";
++  position: absolute;
++  inset: 0;
++  background: rgba(42, 47, 18, 0.55);
+ }
+ 
+ .hero-content {
+-  position:relative;
+-  z-index:2;
++  position: relative;
++  z-index: 2;
++  max-width: 920px;
++  margin: 0 auto;
++}
++
++.hero-label {
++  font-weight: 700;
++  color: var(--gold-accent);
++  letter-spacing: 0.04em;
++  text-transform: uppercase;
++  margin-bottom: 12px;
+ }
+ 
+-.hero h1 {
+-  font-size:42px;
+-  margin-bottom:25px;
++h1 {
++  font-size: clamp(2rem, 4vw, 3rem);
++  margin-bottom: 20px;
++  line-height: 1.2;
+ }
+ 
+ .hero p {
+-  max-width:900px;
+-  margin:0 auto 40px auto;
+-  font-size:20px;
++  font-size: clamp(1rem, 2.2vw, 1.22rem);
++  margin: 0 auto 32px;
+ }
+ 
+-/* BUTTON */
+-.btn {
+-  background:#d4af37;
+-  color:black;
+-  padding:16px 45px;
+-  text-decoration:none;
+-  font-weight:bold;
+-  border-radius:6px;
+-  display:inline-block;
++.section {
++  padding: 72px 8%;
+ }
+ 
+-.btn:hover {
+-  background:#b9972e;
++.section-light {
++  background: var(--military-green);
+ }
+ 
+-/* SECTIONS */
+-.section {
+-  padding:80px 8%;
++.section h2,
++.section h1 {
++  text-align: center;
++  margin-bottom: 20px;
+ }
+ 
+-.section h2 {
+-  text-align:center;
+-  margin-bottom:50px;
++.section-intro,
++.contact-intro {
++  text-align: center;
++  max-width: 850px;
++  margin: 0 auto 34px;
+ }
+ 
+-/* CARDS */
+ .cards {
+-  display:flex;
+-  flex-wrap:wrap;
+-  gap:30px;
+-  justify-content:center;
++  display: grid;
++  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
++  gap: 22px;
+ }
+ 
+ .card {
+-  background:#264e36;
+-  padding:35px;
+-  width:280px;
+-  border-radius:10px;
+-  text-align:center;
++  background: rgba(255, 255, 255, 0.08);
++  border: 1px solid rgba(255, 255, 255, 0.12);
++  padding: 22px;
++  border-radius: 12px;
++}
++
++.card h3,
++.card h2 {
++  margin-bottom: 10px;
++  font-size: 1.2rem;
+ }
+ 
+ .card a {
+-  color:white;
+-  text-decoration:none;
+-  font-weight:bold;
++  display: inline-block;
++  margin-top: 10px;
++  color: var(--gold-accent);
++  text-decoration: none;
++  font-weight: 700;
+ }
+ 
+-.card:hover {
+-  background:#2f6042;
++.service-list {
++  max-width: 900px;
++  margin: 0 auto 26px;
++  padding-left: 20px;
+ }
+ 
+-/* GALLERY */
+-.gallery-grid {
+-  display:grid;
+-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+-  gap:25px;
++.service-list li {
++  margin-bottom: 10px;
+ }
+ 
+-.gallery-grid img {
+-  width:100%;
+-  border-radius:8px;
++.center {
++  text-align: center;
++}
++
++.btn {
++  background: var(--gold-accent);
++  color: #1e210f;
++  padding: 14px 28px;
++  text-decoration: none;
++  font-weight: 700;
++  border-radius: 8px;
++  display: inline-block;
++  border: none;
++  cursor: pointer;
++}
++
++.btn:hover {
++  opacity: 0.93;
+ }
+ 
+-/* CONTACT */
++.btn-outline {
++  background: transparent;
++  color: var(--text-light);
++  border: 2px solid var(--gold-accent);
++}
++
++.contact-grid {
++  display: grid;
++  gap: 24px;
++  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
++  align-items: start;
++}
++
++.contact-card,
+ .contact-form {
+-  max-width:600px;
+-  margin:0 auto;
++  background: rgba(255, 255, 255, 0.08);
++  border: 1px solid rgba(255, 255, 255, 0.12);
++  border-radius: 12px;
++  padding: 22px;
++}
++
++.contact-card h3 {
++  margin-bottom: 12px;
++}
++
++.contact-card a {
++  color: var(--gold-accent);
++}
++
++.contact-form label {
++  display: block;
++  margin-bottom: 5px;
++  font-weight: 700;
+ }
+ 
+ .contact-form input,
+ .contact-form textarea {
+-  width:100%;
+-  padding:12px;
+-  margin-bottom:15px;
+-  border:none;
+-  border-radius:5px;
++  width: 100%;
++  padding: 12px;
++  margin-bottom: 14px;
++  border: 1px solid #cad2ac;
++  border-radius: 6px;
++  font: inherit;
+ }
+ 
+ .contact-form button {
+-  width:100%;
+-  padding:14px;
+-  background:#d4af37;
+-  color:black;
+-  border:none;
+-  font-weight:bold;
+-  border-radius:5px;
++  width: 100%;
++  padding: 14px;
++  background: var(--gold-accent);
++  color: #1e210f;
++  border: none;
++  font-weight: 700;
++  border-radius: 6px;
++}
++
++.gallery-grid {
++  display: grid;
++  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
++  gap: 16px;
++}
++
++.gallery-grid img {
++  width: 100%;
++  height: 240px;
++  object-fit: cover;
++  border-radius: 10px;
++  border: 2px solid rgba(255, 255, 255, 0.18);
+ }
+ 
+-/* FOOTER */
+ footer {
+-  text-align:center;
+-  padding:30px;
+-  background:#13281c;
+-  margin-top:60px;
+-}
+-
+-/* MOBILE */
+-@media(max-width:768px){
+-  nav{
+-    display:flex;
+-    flex-direction:column;
+-    gap:10px;
++  text-align: center;
++  padding: 26px 20px;
++  background: #23280f;
++  margin-top: 30px;
++}
++
++@media (max-width: 768px) {
++  header {
++    flex-direction: column;
++    gap: 14px;
++  }
++
++  nav {
++    justify-content: center;
++  }
++
++  .hero {
++    min-height: 58vh;
++    padding: 90px 16px;
++  }
++
++  .page-hero {
++    min-height: 42vh;
+   }
+ }
++
++
++.page-hero {
++  position: relative;
++  min-height: 48vh;
++  display: grid;
++  place-items: center;
++  text-align: center;
++  padding: 56px 20px;
++}
++
++.page-hero::after {
++  content: "";
++  position: absolute;
++  inset: 0;
++  background: rgba(42, 47, 18, 0.48);
++}
++
++.page-hero-services {
++  background-color: #2a2f12;
++  background-image: url("images/uksed/kahepoolne-taluuks.jpg");
++  background-position: center center;
++  background-size: cover;
++  background-repeat: no-repeat;
++}
++
++.page-hero-content {
++  position: relative;
++  z-index: 1;
++  max-width: 900px;
++}
++
++.page-hero-content p {
++  font-size: 1.08rem;
++}
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background:#1f3d2b;
-  color:white;
-  line-height:1.6;
-}
-
-/* HEADER */
-header {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:30px 8%;
-  background:#173322;
-}
-
-.logo-area {
-  display:flex;
-  align-items:center;
-  gap:16px;
-}
-
-.logo-area img {
-  height:30px;
-}
-
-.logo-area a {
-  text-decoration:none;
-  color:white;
-  font-weight:bold;
-  font-size:30px;
-}
-
-nav a {
-  color:white;
-  text-decoration:none;
-  margin-left:25px;
-  font-weight:500;
-}
-
-nav a:hover {
-  color:#d4af37;
-}
-
-/* HERO */
-.hero {
-  position:relative;
-  padding:140px 20px;
-  text-align:center;
-  background:url("images/terrassid-ja-rodupiirded/puidust-aiamaja-terrass-saaremaa.jpg") center/cover no-repeat;
-}
-
-.hero::after {
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(31,61,43,0.75);
-}
-
-.hero-content {
-  position:relative;
-  z-index:2;
-}
-
-.hero h1 {
-  font-size:42px;
-  margin-bottom:25px;
-}
-
-.hero p {
-  max-width:900px;
-  margin:0 auto 40px auto;
-  font-size:20px;
-}
-
-/* BUTTON */
-.btn {
-  background:#d4af37;
-  color:black;
-  padding:16px 45px;
-  text-decoration:none;
-  font-weight:bold;
-  border-radius:6px;
-  display:inline-block;
-}
-
-.btn:hover {
-  background:#b9972e;
-}
-
-/* SECTIONS */
-.section {
-  padding:80px 8%;
-}
-
-.section h2 {
-  text-align:center;
-  margin-bottom:50px;
-}
-
-/* CARDS */
-.cards {
-  display:flex;
-  flex-wrap:wrap;
-  gap:30px;
-  justify-content:center;
-}
-
-.card {
-  background:#264e36;
-  padding:35px;
-  width:280px;
-  border-radius:10px;
-  text-align:center;
-}
-
-.card a {
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.card:hover {
-  background:#2f6042;
-}
-
-/* GALLERY */
-.gallery-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
-}
-
-.gallery-grid img {
-  width:100%;
-  border-radius:8px;
-}
-
-/* CONTACT */
-.contact-form {
-  max-width:600px;
-  margin:0 auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width:100%;
-  padding:12px;
-  margin-bottom:15px;
-  border:none;
-  border-radius:5px;
-}
-
-.contact-form button {
-  width:100%;
-  padding:14px;
-  background:#d4af37;
-  color:black;
-  border:none;
-  font-weight:bold;
-  border-radius:5px;
-}
-
-/* FOOTER */
-footer {
-  text-align:center;
-  padding:30px;
-  background:#13281c;
-  margin-top:60px;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-  nav{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-  }
-}
