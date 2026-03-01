@@ -1,47 +1,91 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Teenused</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teenused | Saare Puusepp OÜ</title>
+  <meta name="description" content="Saare Puusepp OÜ teenused: puidust uksed, aknad, trepid, terrassid, rõdupiirded, väravad ning muud eritellimustööd Saaremaal.">
+  <meta name="keywords" content="puidust uks, puidust aken, puidust trepp, tammest trepp, terrass, rõdupiire, puidust värav, talusilt">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <div class="logo-area">
-    <a href="index.html"><img src="images/logo.png"></a>
+    <a href="index.html"><img src="images/logo.png" alt="Saare Puusepp OÜ logo"></a>
     <a href="index.html">Saare Puusepp OÜ</a>
   </div>
   <nav>
+    <a href="index.html">Avaleht</a>
     <a href="teenused.html">Teenused</a>
     <a href="galerii.html">Galerii</a>
     <a href="index.html#kontakt">Kontakt</a>
   </nav>
 </header>
 
-<section class="section">
-<h2>Meie teenused</h2>
+<main>
 
-<div class="cards">
-  <div class="card">
-    <a href="galerii.html#uksed">Uksed ja aknad</a>
-  </div>
+  <section class="page-hero page-hero-services">
+    <div class="page-hero-content">
+      <h1>Teenused</h1>
+      <p>Puidust uksed, aknad, trepid, terrassid, rõdupiirded, väravad ja muud eritellimustööd.</p>
+    </div>
+  </section>
 
-  <div class="card">
-    <a href="galerii.html#terrassid">Terrassid ja välistingimused</a>
-  </div>
+  <section class="section">
+    <h2>Teenused</h2>
+    <p class="section-intro">
+      Valmistame vastupidavaid ja kauneid puittooteid täielikult kliendi soovide järgi.
+      Kõik tööd valmivad käsitööna Saaremaal ning keskendume kvaliteedile, sobivusele ja kestvusele.
+    </p>
 
-  <div class="card">
-    <a href="galerii.html#trepp">Trepid</a>
-  </div>
+    <div class="cards">
+      <article class="card">
+        <h2>Puidust uksed</h2>
+        <p>Välisuksed, siseuksed, taluuksed, garaažiuksed ning erilahendused.</p>
+        <a href="galerii.html#uksed">Vaata pilte</a>
+      </article>
 
-  <div class="card">
-    <a href="galerii.html#eritellimus">Eritellimusmööbel ja kingitused</a>
-  </div>
-</div>
+      <article class="card">
+        <h2>Puidust aknad</h2>
+        <p>Eritellimusaknad ja puitdetailid, mis sobivad maja stiili ja mõõtudega.</p>
+        <a href="galerii.html#aknad">Vaata pilte</a>
+      </article>
 
-</section>
+      <article class="card">
+        <h2>Puidust trepid</h2>
+        <p>Sise- ja välistrepid, sh tammest trepp ja käsipuulahendused.</p>
+        <a href="galerii.html#trepid">Vaata pilte</a>
+      </article>
+
+      <article class="card">
+        <h2>Terrassid ja rõdupiirded</h2>
+        <p>Ilmastikukindlad terrassid, rõdupiirded ja aiakonstruktsioonid.</p>
+        <a href="galerii.html#terrassid-ja-rodupiirded">Vaata pilte</a>
+      </article>
+
+      <article class="card">
+        <h2>Puidust väravad</h2>
+        <p>Kvaliteetsed puitväravad koduõuele, talule või suvilale.</p>
+        <a href="galerii.html#varavad">Vaata pilte</a>
+      </article>
+
+      <article class="card">
+        <h2>Muud eritellimustööd</h2>
+        <p>Talusildid, tammest talusildid, varjualused, pingid, sisustusdetailid jm.</p>
+        <a href="galerii.html#muud-eritellimustood">Vaata pilte</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Saare Puusepp OÜ</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
