@@ -1,1 +1,148 @@
+diff --git a/galerii.html b/galerii.html
+index af8fef55b60d1b610d4d9377c819541bb60df2a9..86309bef31ef6b83c321b95bb14a0ae022b193f0 100644
+--- a/galerii.html
++++ b/galerii.html
+@@ -1,53 +1,109 @@
+ <!DOCTYPE html>
+ <html lang="et">
+ <head>
+-<meta charset="UTF-8">
+-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+-<title>Galerii</title>
+-<link rel="stylesheet" href="style.css">
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>Galerii | Saare Puusepp OÜ tehtud tööd</title>
++  <meta name="description" content="Vaata Saare Puusepp OÜ tehtud töid: puidust uksed, trepid, aknad, terrassid ja rõdupiirded, väravad ning muud eritellimustööd.">
++  <meta name="keywords" content="puidust uksed galerii, puidust trepp, tammest trepp, puidust aken, terrass, rõdupiire, puidust värav, talusilt">
++  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ 
+ <header>
+   <div class="logo-area">
+-    <a href="index.html"><img src="images/logo.png"></a>
++    <a href="index.html"><img src="images/logo.png" alt="Saare Puusepp OÜ logo"></a>
+     <a href="index.html">Saare Puusepp OÜ</a>
+   </div>
+   <nav>
++    <a href="index.html">Avaleht</a>
+     <a href="teenused.html">Teenused</a>
+     <a href="galerii.html">Galerii</a>
+     <a href="index.html#kontakt">Kontakt</a>
+   </nav>
+ </header>
+ 
+-<section class="section" id="uksed">
+-<h2>Uksed ja aknad</h2>
+-<div class="gallery-grid">
+-<img src="images/uksed/valisuks.jpg">
+-<img src="images/aknad/suured-aknad.jpg">
+-</div>
+-</section>
+-
+-<section class="section" id="terrassid">
+-<h2>Terrassid</h2>
+-<div class="gallery-grid">
+-<img src="images/terrassid-ja-rodopiirded/rodopiire.jpg">
+-</div>
+-</section>
+-
+-<section class="section" id="trepp">
+-<h2>Trepid</h2>
+-<div class="gallery-grid">
+-<img src="images/trepp/kasipuu-trepp.jpg">
+-</div>
+-</section>
+-
+-<section class="section" id="eritellimus">
+-<h2>Eritellimusmööbel</h2>
+-<div class="gallery-grid">
+-<img src="images/moobel/lasteaia-oue-porikook.jpg">
+-</div>
+-</section>
++<main>
++  <section class="section">
++    <h1>Tehtud tööd</h1>
++    <p class="section-intro">
++      Siin galeriis saad vaadata meie valminud puittooteid alagruppides.
++      Kui soovid sarnast lahendust, võta ühendust ja valmistame just sinu soovidele vastava töö.
++    </p>
++  </section>
++
++  <section class="section" id="uksed">
++    <h2>Uksed</h2>
++    <div class="gallery-grid">
++      <img src="images/uksed/valisuks.jpg" alt="Puidust välisuks">
++      <img src="images/uksed/taluuks.jpg" alt="Taluuks puidust">
++      <img src="images/uksed/kahepoolne-taluuks.jpg" alt="Kahepoolne taluuks">
++      <img src="images/uksed/viimistletud-puidust-mattklaasiga-uks.jpg" alt="Viimistletud puidust uks mattklaasiga">
++      <img src="images/uksed/garaažiuksed-saaremaa.jpg" alt="Puidust garaažiuksed Saaremaal">
++      <img src="images/uksed/puidust-kahepoolne-klaasuks.jpg" alt="Puidust kahepoolne klaasuks">
++    </div>
++  </section>
++
++  <section class="section" id="trepid">
++    <h2>Trepid</h2>
++    <div class="gallery-grid">
++      <img src="images/trepp/tammest-trepp-saaremaa.jpg" alt="Tammest trepp Saaremaal">
++      <img src="images/trepp/sisetrepp.jpg" alt="Puidust sisetrepp">
++      <img src="images/trepp/valitrepp.jpg" alt="Puidust välistrepp">
++      <img src="images/trepp/valge-trepp.jpg" alt="Valge viimistlusega puidust trepp">
++      <img src="images/trepp/kasipuu-trepp.jpg" alt="Käsipuuga puidust trepp">
++      <img src="images/trepp/nurgagatrepp.jpg" alt="Nurgaga puidust trepp">
++    </div>
++  </section>
++
++  <section class="section" id="aknad">
++    <h2>Aknad</h2>
++    <div class="gallery-grid">
++      <img src="images/aknad/aken.jpg" alt="Puidust aken">
++      <img src="images/aknad/suured-aknad.jpg" alt="Suured puidust aknad">
++      <img src="images/aknad/suured-klaasist-aknad-uksed.jpg" alt="Suured klaasist aknad ja uksed puitraamiga">
++      <img src="images/aknad/tammest-aknalaud.jpg" alt="Tammest aknalaud">
++    </div>
++  </section>
++
++  <section class="section" id="terrassid-ja-rodupiirded">
++    <h2>Terrassid ja rõdupiirded</h2>
++    <div class="gallery-grid">
++      <img src="images/terrassid-ja-rodupiirded/aiamaja-terrass-puidust-saaremaa.jpg" alt="Aiamaja puidust terrass Saaremaal">
++      <img src="images/terrassid-ja-rodupiirded/puidust-aiamaja-terrass-saaremaa.jpg" alt="Puidust terrass aiamajale">
++      <img src="images/terrassid-ja-rodupiirded/rodupiire.jpg" alt="Puidust rõdupiire">
++      <img src="images/terrassid-ja-rodupiirded/massiivne-rodupiire.jpg" alt="Massiivne puidust rõdupiire">
++    </div>
++  </section>
++
++  <section class="section" id="varavad">
++    <h2>Väravad</h2>
++    <div class="gallery-grid">
++      <img src="images/varavad/puidust-varav.jpg" alt="Puidust värav">
++      <img src="images/varavad/tammest-varav.jpg" alt="Tammest värav">
++    </div>
++  </section>
++
++  <section class="section" id="muud-eritellimustood">
++    <h2>Muud eritellimustööd</h2>
++    <div class="gallery-grid">
++      <img src="images/muud eritellimustood/tammest-talusilt.jpg" alt="Tammest talusilt">
++      <img src="images/muud eritellimustood/malestustahvel.jpg" alt="Puidust mälestustahvel">
++      <img src="images/muud eritellimustood/puidust-postkastide-varjualune.jpg" alt="Puidust postkastide varjualune">
++      <img src="images/muud eritellimustood/puidust-prugikasti-varjualune.jpg" alt="Puidust prügikasti varjualune">
++      <img src="images/muud eritellimustood/ronitaimede-sein-lillekastiga-puidust.jpg" alt="Ronitaimede sein lillekastiga puidust">
++      <img src="images/muud eritellimustood/ronitaimede-tugiraam-puidust.jpg" alt="Ronitaimede tugiraam puidust">
++    </div>
++  </section>
++</main>
++
++<footer>
++  <p>© <span id="year"></span> Saare Puusepp OÜ</p>
++</footer>
++
++<script>
++  document.getElementById('year').textContent = new Date().getFullYear();
++</script>
+ 
+ </body>
+ </html>
 
