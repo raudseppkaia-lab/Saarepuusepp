@@ -1,1 +1,155 @@
+diff --git a/index.html b/index.html
+index b6e1cefe324beda827f38e8d4748523caae09f0e..ed1991fc60bb4c72732546e3b7593d660b80b561 100644
+--- a/index.html
++++ b/index.html
+@@ -1,52 +1,119 @@
+ <!DOCTYPE html>
+ <html lang="et">
+ <head>
+-<meta charset="UTF-8">
+-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+-<title>Saare Puusepp OÜ</title>
+-<link rel="stylesheet" href="style.css">
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>Saare Puusepp OÜ | Puidust uksed, aknad, trepid, väravad ja terrassid Saaremaal</title>
++  <meta name="description" content="Saare Puusepp OÜ valmistab Saaremaal kvaliteetseid puidust uksi, aknaid, treppe, väravaid, terrasse ja eritellimustöid. Üle 20 aasta kogemust.">
++  <meta name="keywords" content="puidust trepp, puidust uks, puidust aken, tammest trepp, taluuks, talusilt, tammest talusilt, puidust värav, terrass Saaremaal, puusepp Saaremaa">
++  <link rel="canonical" href="https://saarepuusepp.ee/">
++  <meta property="og:title" content="Saare Puusepp OÜ">
++  <meta property="og:description" content="Tere tulemast! Kui soovid puidust vastupidavaid tooteid, siis oled õigel lehel.">
++  <meta property="og:type" content="website">
++  <meta property="og:locale" content="et_EE">
++  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ 
+ <header>
+   <div class="logo-area">
+     <a href="index.html">
+-      <img src="images/logo.png" alt="Saare Puusepp OÜ">
++      <img src="images/logo.png" alt="Saare Puusepp OÜ logo">
+     </a>
+     <a href="index.html">Saare Puusepp OÜ</a>
+   </div>
+   <nav>
++    <a href="index.html">Avaleht</a>
+     <a href="teenused.html">Teenused</a>
+     <a href="galerii.html">Galerii</a>
+     <a href="#kontakt">Kontakt</a>
+   </nav>
+ </header>
+ 
+-<section class="hero">
+-  <div class="hero-content">
+-    <h1>Tere tulemast, oled õiges kohas</h1>
+-    <p>
+-    kui soovid erimöödus uksi, aknaid, kindlat treppi, mis viib sind teisele korrusele,
+-    või on hoopis mingi muu soov, mida saame täita!
+-    </p>
+-    <a href="#kontakt" class="btn">Võta meiega ühendust</a>
+-  </div>
+-</section>
+-
+-<section id="kontakt" class="section">
+-  <h2>Võta meiega ühendust</h2>
+-  <div class="contact-form">
+-    <form action="https://formsubmit.co/saarepuusepp@gmail.com" method="POST">
+-      <input type="text" name="name" placeholder="Sinu nimi" required>
+-      <input type="email" name="email" placeholder="Sinu email" required>
+-      <textarea name="message" rows="5" placeholder="Kirjuta oma soov siia..." required></textarea>
+-      <button type="submit">Saada kiri</button>
+-    </form>
+-  </div>
+-  <p style="text-align:center;margin-top:20px;">
+-    📞 <a href="tel:+372 5188151" style="color:white;">+372 5188151</a>
+-  </p>
+-</section>
++<main>
++  <section class="hero">
++    <div class="hero-content">
++      <p class="hero-label">Tere tulemast</p>
++      <h1>Kui soovid puidust vastupidavaid tooteid, siis oled õigel lehel</h1>
++      <p>
++        Saare Puusepp valmistab käsitööna vastupidavaid puitlahendusi kodudele ja ettevõtetele.
++        Iga toode valmib vaid parimast materjalist, et tulemus oleks pikaealine.
++      </p>
++      <a href="#kontakt" class="btn">Küsi pakkumist</a>
++    </div>
++  </section>
++
++  <section class="section section-light">
++    <h2>Miks valida Saare Puusepp OÜ?</h2>
++    <div class="cards">
++      <article class="card">
++        <h3>Üle 20 aasta kogemust</h3>
++        <p>Valmistame puidust eritellimustöid enam kui 20-aastase kogemuse ja kindla kvaliteediga.</p>
++      </article>
++      <article class="card">
++        <h3>Parim materjal</h3>
++        <p>Kasutame kvaliteetset puitu, sh tamme, et luua vastupidav tammest trepp, talusilt või uks.</p>
++      </article>
++      <article class="card">
++        <h3>Selge suhtlus</h3>
++        <p>Hoiame protsessi lihtsa ja arusaadava: idee, mõõdistus, valmistamine, paigaldus.</p>
++      </article>
++    </div>
++  </section>
++
++  <section class="section" id="teenused-lyhidalt">
++    <h2>Meie põhitööd</h2>
++    <ul class="service-list">
++      <li><strong>Puidust uksed:</strong> välisuks, siseuks, taluuks, garaažiuksed.</li>
++      <li><strong>Puidust aknad:</strong> erimõõdus aknad ja aknalauad.</li>
++      <li><strong>Puidust trepid:</strong> sise- ja välistrepp, tammest trepp.</li>
++      <li><strong>Terrassid ja rõdupiirded:</strong> ilmastikukindlad lahendused.</li>
++      <li><strong>Väravad:</strong> puitväravad koduhoovi ja talu sissepääsu jaoks.</li>
++      <li><strong>Muud eritellimustööd:</strong> talusilt, tammest talusilt, postkastivarjualused jm.</li>
++    </ul>
++    <p class="center"><a class="btn btn-outline" href="galerii.html">Vaata tehtud töid galeriist</a></p>
++  </section>
++
++  <section id="kontakt" class="section section-light">
++    <h2>Võta meiega ühendust</h2>
++    <p class="contact-intro">Kirjelda oma soovi – vastame kiiresti ja leiame sobiva lahenduse.</p>
++
++    <div class="contact-grid">
++      <div class="contact-card">
++        <h3>Kontaktandmed</h3>
++        <p><strong>Saare Puusepp OÜ</strong></p>
++        <p>Kogemus: <strong>üle 20 aasta</strong></p>
++        <p>Asukoht: <strong>Saaremaa, Karida küla, Kaarli talu</strong></p>
++        <p>E-post: <a href="mailto:saarepuusepp@gmail.com">saarepuusepp@gmail.com</a></p>
++        <p>Telefon: <a href="tel:+3725188151">+372 518 8151</a></p>
++      </div>
++
++      <div class="contact-form">
++        <form action="https://formsubmit.co/saarepuusepp@gmail.com" method="POST">
++          <input type="hidden" name="_subject" value="Uus päring saarepuusepp.ee lehelt">
++          <input type="hidden" name="_captcha" value="false">
++          <label for="name">Nimi</label>
++          <input id="name" type="text" name="name" placeholder="Sinu nimi" required>
++
++          <label for="email">E-post</label>
++          <input id="email" type="email" name="email" placeholder="Sinu e-post" required>
++
++          <label for="message">Sõnum</label>
++          <textarea id="message" name="message" rows="5" placeholder="Kirjuta oma soov siia..." required></textarea>
++
++          <button type="submit">Saada päring</button>
++        </form>
++      </div>
++    </div>
++  </section>
++</main>
++
++<footer>
++  <p>© <span id="year"></span> Saare Puusepp OÜ • Puidust uksed, aknad, trepid ja eritellimustööd Saaremaal</p>
++</footer>
+ 
++<script>
++  document.getElementById('year').textContent = new Date().getFullYear();
++</script>
+ </body>
+ </html>
 
